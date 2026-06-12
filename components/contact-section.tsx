@@ -28,17 +28,15 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-28 py-12 sm:py-14">
+    <section id="contact" className="scroll-mt-28 py-8 sm:py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Contact"
-          title="Let's build something that feels sharp and memorable."
-          description="The form opens your email client, which keeps it lightweight while still being practical for a personal portfolio."
         />
-        <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="border-border/60">
-            <CardContent className="space-y-5">
-              <div className="rounded-3xl border border-border/60 bg-background/70 p-5">
+            <CardContent className="space-y-4 p-5 sm:p-6">
+              <div className="rounded-3xl border border-border/60 bg-background/70 p-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                   Direct Mail
                 </p>
@@ -60,8 +58,8 @@ export function ContactSection() {
                   ))}
                 </div>
               </div>
-              <div className="rounded-3xl border border-border/60 bg-gradient-to-br from-foreground/5 to-transparent p-5">
-                <p className="text-sm leading-7 text-muted-foreground">
+              <div className="rounded-3xl border border-border/60 bg-gradient-to-br from-foreground/5 to-transparent p-4">
+                <p className="text-sm leading-6 text-muted-foreground">
                   If you have a product challenge, a freelance brief, or a team opening, I'm happy to
                   talk through scope, timeline, and the best way to ship it well.
                 </p>
@@ -70,7 +68,7 @@ export function ContactSection() {
           </Card>
 
           <Card className="border-border/60">
-            <CardContent>
+            <CardContent className="p-5 sm:p-6">
               <form className="space-y-4" onSubmit={onSubmit}>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <Input

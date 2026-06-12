@@ -7,11 +7,7 @@ export function LeadershipSection() {
   return (
     <section id="leadership" className="scroll-mt-28 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Leadership Experience"
-          title="Leading teams and turning ideas into action."
-          description="You’ve led hackathon teams and taken part in competitive problem-solving events, which is exactly the kind of leadership recruiters want to see from a fresher."
-        />
+        <SectionHeading eyebrow="Leadership Experience" />
         <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
           <ScrollReveal>
             <Card className="h-full border-border/60">
@@ -49,4 +45,3 @@ export function LeadershipSection() {
     </section>
   );
 }
-

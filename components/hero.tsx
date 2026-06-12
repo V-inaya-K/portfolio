@@ -12,7 +12,7 @@ const roles = ["Full Stack Developer", "AI Engineer", "Problem Solver", "Agentic
 
 export function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden pt-28 sm:pt-32">
+    <section id="home" className="relative overflow-hidden pt-24 sm:pt-28">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
         <div className="flex flex-col justify-center">
           <motion.div
@@ -29,7 +29,7 @@ export function Hero() {
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.05 }}
-            className="mt-6 font-display text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl"
+            className="mt-5 font-display text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-[4.5rem]"
           >
             {portfolioData.personal.name}
           </motion.h1>
@@ -38,7 +38,7 @@ export function Hero() {
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.1 }}
-            className="mt-4 font-display text-2xl text-muted-foreground sm:text-3xl"
+            className="mt-3 font-display text-xl text-muted-foreground sm:text-2xl"
           >
             <TypewriterText phrases={roles} className="text-foreground" />
           </motion.div>
@@ -47,7 +47,7 @@ export function Hero() {
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.15 }}
-            className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg"
+            className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-[17px]"
           >
             {portfolioData.personal.shortIntro}
           </motion.p>
@@ -56,7 +56,7 @@ export function Hero() {
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.2 }}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-6 flex flex-wrap items-center gap-3"
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/70 px-4 py-2 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4" />
@@ -93,7 +93,7 @@ export function Hero() {
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.3 }}
-            className="mt-8 flex items-center gap-3"
+            className="mt-6 flex items-center gap-3"
           >
             {portfolioData.socialLinks.map((link) => (
               <SocialIcon key={link.label} link={link} />
@@ -105,7 +105,7 @@ export function Hero() {
           initial={{ opacity: 1, scale: 1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.12 }}
-          className="relative mx-auto flex w-full max-w-[520px] items-center justify-center"
+          className="relative mx-auto flex w-full max-w-[480px] items-center justify-center"
         >
           <div className="absolute inset-6 rounded-[2.5rem] bg-gradient-to-br from-sky-400/20 via-transparent to-emerald-400/20 blur-3xl" />
           <div className="relative w-full overflow-hidden rounded-[2.5rem] border border-border/60 bg-card/70 p-4 shadow-2xl backdrop-blur-xl">

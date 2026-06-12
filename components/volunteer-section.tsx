@@ -9,8 +9,6 @@ export function VolunteerSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Volunteer Experience"
-          title="Learning by contributing, creating, and showing up."
-          description="This section reflects the experience you actually have as a fresher: campus tech work, open-source contribution, cultural involvement, and community building."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           {portfolioData.volunteerExperience.map((item, index) => (
@@ -38,4 +36,3 @@ export function VolunteerSection() {
     </section>
   );
 }
-

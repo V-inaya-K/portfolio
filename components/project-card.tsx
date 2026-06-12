@@ -9,9 +9,9 @@ export function ProjectCard({ project }: { project: Project }) {
   const extraTech = project.tech.length - techTags.length;
 
   return (
-    <Card className="group flex h-full min-h-[36rem] flex-col overflow-hidden border-border/60 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <div className="relative overflow-hidden border-b border-border/60 bg-gradient-to-br from-slate-900 via-slate-950 to-black p-6">
-        <div className="flex aspect-[16/10] items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6">
+    <Card className="group flex h-full min-h-[30rem] flex-col overflow-hidden border-border/60 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <div className="relative overflow-hidden border-b border-border/60 bg-gradient-to-br from-slate-900 via-slate-950 to-black p-4">
+        <div className="flex aspect-[16/10] items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-4">
           {project.image ? (
             <Image
               src={project.image}
@@ -29,8 +29,8 @@ export function ProjectCard({ project }: { project: Project }) {
           )}
         </div>
       </div>
-      <CardContent className="flex flex-1 flex-col space-y-5">
-        <div className="space-y-3">
+      <CardContent className="flex flex-1 flex-col space-y-4 p-5 sm:p-6">
+        <div className="space-y-2.5">
           <div className="mb-2 flex items-center justify-between gap-4">
             <h3 className="font-display text-xl font-semibold">{project.title}</h3>
             {project.featured ? (
@@ -42,8 +42,8 @@ export function ProjectCard({ project }: { project: Project }) {
           <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
             {project.category}
           </p>
-          <div className="min-h-[7.5rem]">
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">{project.description}</p>
+          <div className="min-h-[5.75rem]">
+            <p className="mt-2.5 text-sm leading-6 text-muted-foreground">{project.description}</p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">

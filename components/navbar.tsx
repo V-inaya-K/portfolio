@@ -71,7 +71,7 @@ export function Navbar() {
           VS
         </a>
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => {
             const isHome = item.href === "#home";
             const isActive = isHome && activeSection === "home";
@@ -106,15 +106,11 @@ export function Navbar() {
           })}
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <span className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground">
-            {sectionMap.find((entry) => entry.id === activeSection)?.label ?? "Home"}
-          </span>
+        <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center gap-2 lg:hidden">
-          <ThemeToggle />
+        <div className="flex items-center gap-2 md:hidden">
           <Button
             type="button"
             variant="outline"
@@ -135,9 +131,15 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.98 }}
             transition={{ duration: 0.2 }}
-            className="mx-auto mt-3 max-w-7xl rounded-3xl border border-border/60 bg-background/95 p-4 shadow-2xl backdrop-blur-xl lg:hidden"
+            className="mx-auto mt-3 max-w-7xl rounded-3xl border border-border/60 bg-background/95 p-4 shadow-2xl backdrop-blur-xl md:hidden"
           >
             <div className="grid gap-2">
+              <div className="flex items-center justify-between rounded-2xl border border-border/60 px-4 py-3">
+                <span className="text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground">
+                  Theme
+                </span>
+                <ThemeToggle />
+              </div>
               {navItems.map((item) =>
                 item.external ? (
                   <a
