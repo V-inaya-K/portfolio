@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0B1220"/>
+  <circle cx="1000" cy="140" r="250" fill="#38BDF8" fill-opacity="0.12"/>
+  <circle cx="220" cy="540" r="240" fill="#10B981" fill-opacity="0.12"/>
+  <text x="80" y="180" fill="white" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="700">Vinayak Shukla</text>
+  <text x="80" y="260" fill="#CBD5E1" font-size="34" font-family="Inter, Arial, sans-serif">Full Stack Developer • AI Engineer • Problem Solver</text>
+  <text x="80" y="360" fill="#94A3B8" font-size="28" font-family="Inter, Arial, sans-serif">Premium portfolio crafted with Next.js, TypeScript, Tailwind, and Framer Motion.</text>
+</svg>
+

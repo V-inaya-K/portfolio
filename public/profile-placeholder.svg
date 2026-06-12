@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="760" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.5" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="120" x2="760" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1125" rx="48" fill="url(#bg)"/>
+  <circle cx="680" cy="170" r="200" fill="url(#accent)"/>
+  <circle cx="220" cy="860" r="240" fill="#38BDF8" fill-opacity="0.08"/>
+  <path d="M270 870C330 770 395 720 450 720C505 720 570 770 630 870" stroke="white" stroke-opacity="0.14" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="450" cy="470" r="140" fill="white" fill-opacity="0.08"/>
+  <circle cx="450" cy="430" r="82" fill="white" fill-opacity="0.18"/>
+  <path d="M344 704C351 608 381 550 450 550C519 550 549 608 556 704" fill="white" fill-opacity="0.14"/>
+  <text x="66" y="1060" fill="white" fill-opacity="0.92" font-size="60" font-family="Space Grotesk, Arial, sans-serif" font-weight="700">Vinayak Shukla</text>
+  <text x="68" y="1110" fill="#94A3B8" font-size="24" font-family="IBM Plex Mono, Arial, sans-serif">Designing premium developer experiences</text>
+</svg>
+
