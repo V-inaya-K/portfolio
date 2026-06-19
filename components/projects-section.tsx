@@ -46,7 +46,8 @@ export function ProjectsSection() {
 
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">
-            Showing {showAll ? filtered.length : 3} of {filtered.length} projects
+            {/* Showing {showAll ? filtered.length : 3} of {filtered.length} projects */}
+            Showing {showAll ? filtered.length : Math.min(3, filtered.length)} of {filtered.length} projects
           </p>
           <Button variant="outline" size="sm" type="button" onClick={() => setShowAll((value) => !value)}>
             {showAll ? (
