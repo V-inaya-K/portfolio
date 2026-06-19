@@ -92,7 +92,7 @@ export function AboutSection() {
               </CardContent>
             </Card>
           </ScrollReveal>
-          <ScrollReveal delay={0.05}>
+          {/* <ScrollReveal delay={0.05}>
             <Card className="h-full border-border/60">
               <CardContent className="space-y-3.5 p-5 sm:p-6">
                 <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">Snapshot</p>
@@ -112,7 +112,7 @@ export function AboutSection() {
                 </div>
               </CardContent>
             </Card>
-          </ScrollReveal>
+          </ScrollReveal> */}
         </div>
       </div>
     </section>
