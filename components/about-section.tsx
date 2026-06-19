@@ -34,18 +34,18 @@ export function AboutSection() {
                   </div>
                   <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
-                      Interests
+                      Location
                     </p>
                     <p className="mt-2 text-sm text-foreground/85">
-                      UI systems, performance, hackathons, and open source.
+                      New Delhi, India
                     </p>
                   </div>
                   <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
-                      Goals
+                      Availability
                     </p>
                     <p className="mt-2 text-sm text-foreground/85">
-                      Ship fast, build clean, and keep learning through real teams.
+                      Open to internships, freelance, full-time, and selective collaborations.
                     </p>
                   </div>
                 </div>
