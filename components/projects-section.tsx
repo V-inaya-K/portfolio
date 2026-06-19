@@ -21,7 +21,7 @@ export function ProjectsSection() {
     return projects.filter((project) => project.category === active);
   }, [active, projects]);
 
-  const visibleProjects = showAll ? filtered : filtered.slice(0, 1);
+  const visibleProjects = showAll ? filtered : filtered.slice(0, 3);
 
   return (
     <section id="projects" className="scroll-mt-28 py-8 sm:py-10">
