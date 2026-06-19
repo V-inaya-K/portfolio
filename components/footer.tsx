@@ -36,11 +36,11 @@ export function Footer() {
         </div>
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} {portfolioData.personal.name}. All rights reserved.</p>
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             {portfolioData.socialLinks.map((link) => (
               <SocialIcon key={link.label} link={link} />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
