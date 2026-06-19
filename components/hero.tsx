@@ -78,7 +78,7 @@ export function Hero() {
               size="lg"
               className="shadow-glow"
               href={portfolioData.personal.resumeUrl}
-              download="Vinayak-Shukla-Resume.md"
+              download="resume.pdf"
             >
               <ArrowDownToLine className="h-4 w-4" />
               Download Resume

@@ -12,7 +12,7 @@ export const portfolioData: PortfolioData = {
     availability: "Open to internships, freelance, full-time, and selective collaborations.",
     status: "available",
     profileImage: "/profile.jpg",
-    resumeUrl: "/api/resume",
+    resumeUrl: "/resume.pdf",
     email: "vinze200410@gmail.com",
     quote: "Make it sharp, make it fast, make it feel inevitable."
   },
@@ -153,6 +153,17 @@ export const portfolioData: PortfolioData = {
     }
   ],
   projects: [
+    
+    {
+      title: "Hook.ai",
+      category: "Generative AI",
+      description:
+        "Hook.ai is a Flask-based AI application that generates viral, SEO-optimized titles, descriptions, and hashtags for video content. Powered by Llama 2 and modern prompting techniques, it helps creators maximize reach and engagement.",
+      tech: ["Python", "Flask", "Whisper", "Lang Chain", "Fine-Tuning", "Few-Shot Prompting", "HTML", "CSS", "Prompt Engineering"],
+      github: "https://github.com/V-inaya-K/Hook.AI",
+      live: "https://example.com",
+      image: "/projectpic/hook.jpeg",
+    },
     {
       title: "Modco",
       category: "AI / Reinforcement Learning",
@@ -164,11 +175,20 @@ export const portfolioData: PortfolioData = {
       featured: true
     },
     {
+      title: "Aura Scanner",
+      category: "AI / Browser Automation",
+      description:
+        "Aura Scanner is an AI-powered chatbot that allows users to explore the public digital footprint of a professional using LinkedIn and optionally Twitter data. The system uses browser automation plus RAG to provide accurate, context-aware answers.",
+      tech: ["Python", "Flask", "Selenium", "Browser Automation", "LangChain", "Groq API", "FAISS", "Llama 3.3 70B Versatile", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/V-inaya-K/Aura-Scanner",
+      live: "Demo video: https://youtu.be/rhfow0AsuP4. Not live on cloud because Aura Scanner uses browser automation due to API restrictions."
+    },
+    {
       title: "AI Startup Roast",
       category: "AI / Startup Tools",
       description:
         "AI Startup Roast is a roast-style startup idea analyzer inspired by Tech Roast Show. It uses four agents - Business, Use, Opponent, and Roaster - to critique startup ideas from multiple angles, generate a shareable roast meme, and deliver an overall score that makes weak ideas impossible to ignore.",
-      tech: ["Multi-Agent Systems", "AI Agents", "OpenAI Codex", "OpenAI Images", "Prompt Engineering", "Meme Generation", "Scorecard", "Generative AI", "Startup Analysis", "LLMs"],
+      tech: ["Multi-Agent Systems", "AI Agents", "OpenAI Codex", "Prompt Engineering", "Generative AI",  "LLMs"],
       github: "https://github.com/soummyaanon/Codexcomunitymeetup",
       live: "https://example.com"
     },
@@ -180,15 +200,6 @@ export const portfolioData: PortfolioData = {
       tech: ["Python", "FastAPI", "MERN Stack", "Tailwind CSS", "Computer Vision", "AI/ML", "Image Processing", "MongoDB", "React"],
       github: "https://github.com/V-inaya-K/Xecure",
       live: "https://example.com"
-    },
-    {
-      title: "Aura Scanner",
-      category: "AI / Browser Automation",
-      description:
-        "Aura Scanner is an AI-powered chatbot that allows users to explore the public digital footprint of a professional using LinkedIn and optionally Twitter data. The system uses browser automation plus RAG to provide accurate, context-aware answers.",
-      tech: ["Python", "Flask", "Selenium", "Browser Automation", "LangChain", "Groq API", "FAISS", "Llama 3.3 70B Versatile", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/V-inaya-K/Aura-Scanner",
-      live: "Demo video: https://youtu.be/rhfow0AsuP4. Not live on cloud because Aura Scanner uses browser automation due to API restrictions."
     },
     {
       title: "Reo",
@@ -206,15 +217,6 @@ export const portfolioData: PortfolioData = {
         "Case.AI is an intelligent legal and case analysis platform that leverages large language models to summarize documents, extract key insights, and generate actionable recommendations. It simplifies complex case research through AI-powered analysis.",
       tech: ["Generative AI", "NLP", "LLMs", "MERN Stack", "JavaScript", "Python", "Document Processing", "Prompt Engineering"],
       github: "https://github.com/V-inaya-K/Case.Ai",
-      live: "https://example.com"
-    },
-    {
-      title: "Hook.ai",
-      category: "Generative AI",
-      description:
-        "Hook.ai is a Flask-based AI application that generates viral, SEO-optimized titles, descriptions, and hashtags for video content. Powered by Llama 2 and modern prompting techniques, it helps creators maximize reach and engagement.",
-      tech: ["Python", "Flask", "Whisper", "Llama 2", "Groq", "Fine-Tuning", "Few-Shot Prompting", "HTML", "CSS", "Prompt Engineering"],
-      github: "https://github.com/V-inaya-K/Hook.AI",
       live: "https://example.com"
     },
     {
