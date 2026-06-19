@@ -30,7 +30,7 @@ export function ProjectsSection() {
           eyebrow="Projects"
         />
 
-        <div className="mb-5 flex flex-wrap gap-2">
+        {/* <div className="mb-5 flex flex-wrap gap-2">
           {filters.map((filter) => (
             <button
               key={filter}
@@ -42,7 +42,7 @@ export function ProjectsSection() {
               {active === filter ? " •" : ""}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-muted-foreground">
