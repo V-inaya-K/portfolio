@@ -163,6 +163,7 @@ export const portfolioData: PortfolioData = {
       github: "https://github.com/V-inaya-K/Hook.AI",
       live: "https://example.com",
       image: "/projectpic/hook.jpeg",
+      featured: true
     },
     {
       title: "Modco",
@@ -172,7 +173,19 @@ export const portfolioData: PortfolioData = {
       tech: ["Reinforcement Learning", "NLP", "Hugging Face", "LLMs", "Python", "Machine Learning", "Docker", "PyTorch", "Prompt Engineering"],
       github: "https://github.com/V-inaya-K/Contend-Moderator-RL",
       live: "https://example.com",
-      featured: true
+      image: "/projectpic/modco.jpg",
+      featured: true,
+    },
+    {
+      title: "AI Startup Roast",
+      category: "AI / Startup Tools",
+      description:
+        "AI Startup Roast is a fun and relatable roast-style startup idea analyzer inspired by Tech Roast Show. It uses four agents - Business, Use, Opponent, and Roaster - to critique startup ideas from multiple angles, generate a shareable roast meme, and deliver an overall score that makes weak ideas impossible to ignore.",
+      tech: ["Multi-Agent Systems", "AI Agents", "OpenAI Codex", "Prompt Engineering", "Generative AI",  "LLMs"],
+      github: "https://github.com/soummyaanon/Codexcomunitymeetup",
+      live: "https://example.com",
+      image: "/projectpic/roast.jpg",
+      featured: true,
     },
     {
       title: "Aura Scanner",
@@ -182,15 +195,6 @@ export const portfolioData: PortfolioData = {
       tech: ["Python", "Flask", "Selenium", "Browser Automation", "LangChain", "Groq API", "FAISS", "Llama 3.3 70B Versatile", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/V-inaya-K/Aura-Scanner",
       live: "Demo video: https://youtu.be/rhfow0AsuP4. Not live on cloud because Aura Scanner uses browser automation due to API restrictions."
-    },
-    {
-      title: "AI Startup Roast",
-      category: "AI / Startup Tools",
-      description:
-        "AI Startup Roast is a roast-style startup idea analyzer inspired by Tech Roast Show. It uses four agents - Business, Use, Opponent, and Roaster - to critique startup ideas from multiple angles, generate a shareable roast meme, and deliver an overall score that makes weak ideas impossible to ignore.",
-      tech: ["Multi-Agent Systems", "AI Agents", "OpenAI Codex", "Prompt Engineering", "Generative AI",  "LLMs"],
-      github: "https://github.com/soummyaanon/Codexcomunitymeetup",
-      live: "https://example.com"
     },
     {
       title: "Xecure",
