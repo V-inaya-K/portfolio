@@ -21,6 +21,7 @@ export type ProjectCategory =
   | "AI / Browser Automation"
   | "AI / Privacy"
   | "AI / Full Stack"
+  | "AI / Agentic Pipeline"
   | "Generative AI"
   | "AI / Fraud Detection"
   | "AI / Startup Tools"
