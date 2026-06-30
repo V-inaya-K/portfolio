@@ -155,7 +155,7 @@ export const portfolioData: PortfolioData = {
   projects: [
     {
   title: "Wired AI",
-  category: "AI / Agentic Workflow",
+  category: "AI / Agentic Pipeline",
   description:
     "Wired AI is an agentic voice research assistant that combines RAG, voice AI, and intelligent workflow orchestration to answer queries from uploaded documents or the web. It uses Faster-Whisper for speech-to-text, ChromaDB for document retrieval, Groq LLM for reasoning, LangGraph for agent routing, and Piper TTS for natural voice responses, providing a seamless multimodal AI assistant experience.",
   tech: [
