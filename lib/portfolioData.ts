@@ -153,7 +153,19 @@ export const portfolioData: PortfolioData = {
     }
   ],
   projects: [
-    
+    {
+  title: "Wired AI",
+  category: "AI / Agentic Workflow",
+  description:
+    "Wired AI is an agentic voice research assistant that combines RAG, voice AI, and intelligent workflow orchestration to answer queries from uploaded documents or the web. It uses Faster-Whisper for speech-to-text, ChromaDB for document retrieval, Groq LLM for reasoning, LangGraph for agent routing, and Piper TTS for natural voice responses, providing a seamless multimodal AI assistant experience.",
+  tech: [
+    "Python","FastAPI","LangGraph","Groq API","ChromaDB","LlamaIndex","Faster-Whisper STT","Piper TTS","React","Vite","SQLite","RAG","Agentic AI","Voice AI"
+  ],
+  github: "https://github.com/V-inaya-K/Wired-AI",
+  live: "https://example.com",
+       image: "/projectpic/wired.jpg",
+      featured: true,
+},
     {
       title: "Hook.ai",
       category: "Generative AI",
@@ -166,17 +178,6 @@ export const portfolioData: PortfolioData = {
       featured: true
     },
     {
-      title: "Modco",
-      category: "AI / Reinforcement Learning",
-      description:
-        "Modco is a reinforcement learning–powered content moderation platform that automatically detects toxic, spam, hateful, and unsafe content across digital platforms. The system combines NLP, LLM-based classification, and automated evaluation pipelines to continuously improve moderation accuracy and safety outcomes.",
-      tech: ["Reinforcement Learning", "NLP", "Hugging Face", "LLMs", "Python", "Machine Learning", "Docker", "PyTorch", "Prompt Engineering"],
-      github: "https://github.com/V-inaya-K/Contend-Moderator-RL",
-      live: "https://example.com",
-      image: "/projectpic/modco.jpg",
-      featured: true,
-    },
-    {
       title: "AI Startup Roast",
       category: "AI / Startup Tools",
       description:
@@ -186,6 +187,16 @@ export const portfolioData: PortfolioData = {
       live: "https://example.com",
       image: "/projectpic/roast.jpg",
       featured: true,
+    },
+    {
+      title: "Modco",
+      category: "AI / Reinforcement Learning",
+      description:
+        "Modco is a reinforcement learning–powered content moderation platform that automatically detects toxic, spam, hateful, and unsafe content across digital platforms. The system combines NLP, LLM-based classification, and automated evaluation pipelines to continuously improve moderation accuracy and safety outcomes.",
+      tech: ["Reinforcement Learning", "NLP", "Hugging Face", "LLMs", "Python", "Machine Learning", "Docker", "PyTorch", "Prompt Engineering"],
+      github: "https://github.com/V-inaya-K/Contend-Moderator-RL",
+      live: "https://example.com",
+      image: "/projectpic/modco.jpg",
     },
     {
       title: "Aura Scanner",
@@ -212,15 +223,6 @@ export const portfolioData: PortfolioData = {
         "Reo is an AI-powered privacy protection platform designed to identify sensitive data exposure and privacy vulnerabilities across digital systems. It provides intelligent recommendations and risk insights to help users protect personal and organizational data.",
       tech: ["Python", "Data Privacy", "AI/ML", "LLMs", "FastAPI", "Security Analytics", "Risk Assessment", "Privacy Engineering"],
       github: "https://github.com/V-inaya-K/Reo-Your-Privacy-Guard",
-      live: "https://example.com"
-    },
-    {
-      title: "Case.AI",
-      category: "AI / Full Stack",
-      description:
-        "Case.AI is an intelligent legal and case analysis platform that leverages large language models to summarize documents, extract key insights, and generate actionable recommendations. It simplifies complex case research through AI-powered analysis.",
-      tech: ["Generative AI", "NLP", "LLMs", "MERN Stack", "JavaScript", "Python", "Document Processing", "Prompt Engineering"],
-      github: "https://github.com/V-inaya-K/Case.Ai",
       live: "https://example.com"
     },
     {
