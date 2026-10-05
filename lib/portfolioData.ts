@@ -78,7 +78,7 @@ export const portfolioData: PortfolioData = {
       company: "Neoflo.ai",
       logo: "/company-nova.svg",
       position: "Engineering Intern",
-      dates: "Sep,2026 - Present",
+      dates: "Sep 2026 - Present",
       description: "Contribution towards tech growth at ADGIPS.",
       highlights: []
     },
@@ -96,22 +96,6 @@ export const portfolioData: PortfolioData = {
       position: "Contributor",
       dates: "2024 - Present",
       description: "Developing effective open source solutions for social benefit.",
-      highlights: []
-    },
-    {
-      company: "Yakshagna",
-      logo: "/company-nova.svg",
-      position: "Actor",
-      dates: "2023 - Present",
-      description: "Bringing to stage through engaging performances.",
-      highlights: []
-    },
-    {
-      company: "Quintessence",
-      logo: "/company-atlas.svg",
-      position: "Member",
-      dates: "2023 - Present",
-      description: "Developing critical thinking and communication skills.",
       highlights: []
     }
   ],
