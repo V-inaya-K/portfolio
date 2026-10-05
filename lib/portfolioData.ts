@@ -86,7 +86,7 @@ export const portfolioData: PortfolioData = {
       company: "Google Developer Group On Campus ADGIPS",
       logo: "/company-nova.svg",
       position: "AI/ML and Tech Member",
-      dates: "2024 - Present",
+      dates: "2024 - Aug 2026",
       description: "Contribution towards tech growth at ADGIPS.",
       highlights: []
     },
@@ -94,7 +94,7 @@ export const portfolioData: PortfolioData = {
       company: "Social Winter of Code",
       logo: "/company-atlas.svg",
       position: "Contributor",
-      dates: "2024 - Present",
+      dates: "Oct 2024 - Jan 2025",
       description: "Developing effective open source solutions for social benefit.",
       highlights: []
     }
