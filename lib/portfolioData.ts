@@ -75,6 +75,14 @@ export const portfolioData: PortfolioData = {
   },
   experience: [
     {
+      company: "Neoflo.ai",
+      logo: "/company-nova.svg",
+      position: "Engineering Intern",
+      dates: "Sep,2026 - Present",
+      description: "Contribution towards tech growth at ADGIPS.",
+      highlights: []
+    },
+    {
       company: "Google Developer Group On Campus ADGIPS",
       logo: "/company-nova.svg",
       position: "AI/ML and Tech Member",
