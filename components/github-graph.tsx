@@ -19,7 +19,7 @@ export function GitHubGraph({ squares }: { squares: number[] }) {
             </p>
             <h3 className="mt-1 font-display text-xl font-semibold">Contribution Graph</h3>
           </div>
-          <div className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground">
+          <div className="rounded-full border border-white/25 px-3 py-1 text-xs text-muted-foreground">
             Past 12 months
           </div>
         </div>

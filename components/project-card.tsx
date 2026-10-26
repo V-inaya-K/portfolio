@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Github } from "lucide-react";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Project } from "@/lib/types";
@@ -9,15 +12,20 @@ export function ProjectCard({ project }: { project: Project }) {
   const extraTech = project.tech.length - techTags.length;
 
   return (
-    <Card className="group flex h-full min-h-[30rem] flex-col overflow-hidden border-border/60 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <div className="relative overflow-hidden border-b border-border/60 bg-gradient-to-br from-slate-900 via-slate-950 to-black p-4">
+    <motion.div
+      className="h-full"
+      whileHover={{ y: -6 }}
+      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <Card className="group relative flex h-full min-h-[30rem] flex-col overflow-hidden border-white/25 transition-all duration-300 hover:border-foreground/25 hover:shadow-2xl">
+      <div className="relative overflow-hidden border-b border border-white/25 bg-gradient-to-br from-slate-900 via-slate-950 to-black p-4">
         <div className="flex aspect-[16/10] items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-4">
           {project.image ? (
             <Image
               src={project.image}
               alt={project.title}
               fill
-              className="object-cover transition duration-500 group-hover:scale-105"
+              className="object-cover transition duration-500 ease-out group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
               priority={project.featured}
             />
@@ -57,7 +65,7 @@ export function ProjectCard({ project }: { project: Project }) {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border/60 px-4 py-2 text-sm transition hover:bg-accent"
+            className="inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-sm transition-all duration-300 hover:border-foreground/30 hover:bg-accent"
           >
             <Github className="h-4 w-4" />
             GitHub
@@ -67,6 +75,7 @@ export function ProjectCard({ project }: { project: Project }) {
           <p className="text-xs leading-5 text-muted-foreground">{project.live}</p>
         ) : null}
       </CardContent>
-    </Card>
+      </Card>
+    </motion.div>
   );
 }

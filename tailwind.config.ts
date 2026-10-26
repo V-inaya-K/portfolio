@@ -39,7 +39,8 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         display: ["var(--font-display)"],
-        mono: ["var(--font-mono)"]
+        mono: ["var(--font-mono)"],
+        cursive: ["var(--font-cursive)"]
       },
       boxShadow: {
         glow: "0 0 0 1px rgba(255,255,255,0.06), 0 20px 80px rgba(0,0,0,0.18)"

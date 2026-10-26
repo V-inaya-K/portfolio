@@ -20,7 +20,7 @@ export function SkillsSection() {
           eyebrow="Skills"
         />
         <ScrollReveal className="mt-3">
-          <Card className="border-border/50 bg-card/60">
+          <Card className="border-white/25 bg-card/60">
             <CardContent className="space-y-4 p-4 sm:p-5">
               <div className="flex items-center justify-between gap-3">
                 <p className="text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
@@ -52,7 +52,7 @@ export function SkillsSection() {
                   const extraCount = expanded ? 0 : Math.max(group.items.length - sampleItems.length, 0);
 
                   return (
-                  <div key={group.category} className="rounded-2xl border border-border/40 bg-background/50 p-4">
+                  <div key={group.category} className="rounded-2xl border border-white/25 bg-background/50 p-4">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
                       {group.category}
                     </p>
@@ -60,13 +60,13 @@ export function SkillsSection() {
                       {sampleItems.map((item) => (
                         <span
                           key={item}
-                          className="rounded-full border border-border/50 bg-background/60 px-2.5 py-1 text-[11px] leading-none text-foreground/75"
+                          className="rounded-full border border-white/25 bg-background/60 px-2.5 py-1 text-[11px] leading-none text-foreground/75"
                         >
                           {item}
                         </span>
                       ))}
                       {extraCount > 0 ? (
-                        <span className="rounded-full border border-dashed border-border/50 bg-background/60 px-2.5 py-1 text-[11px] leading-none text-foreground/60">
+                        <span className="rounded-full border border-dashed border-white/25 bg-background/60 px-2.5 py-1 text-[11px] leading-none text-foreground/60">
                           +{extraCount} more
                         </span>
                       ) : null}

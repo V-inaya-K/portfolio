@@ -26,7 +26,7 @@ export function GitHubSection() {
             <Card className="border-border/60">
               <CardContent className="space-y-4 p-5 sm:p-6">
                 <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                     <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                       Followers
                     </p>
@@ -34,7 +34,7 @@ export function GitHubSection() {
                       {portfolioData.github.followers}
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                     <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                       Repositories
                     </p>
@@ -88,7 +88,7 @@ export function GitHubSection() {
                       {portfolioData.github.achievements.map((item) => (
                         <span
                           key={item}
-                          className="rounded-full border border-border/60 px-3 py-1 text-xs text-foreground/80"
+                          className="rounded-full border border-white/25 px-3 py-1 text-xs text-foreground/80"
                         >
                           {item}
                         </span>
@@ -100,7 +100,7 @@ export function GitHubSection() {
                       </p>
                       <div className="mt-3 space-y-3">
                         {portfolioData.certifications.map((item) => (
-                          <div key={item.title} className="rounded-2xl border border-border/60 p-4">
+                          <div key={item.title} className="rounded-2xl border border-white/25 p-4">
                             <p className="font-medium">{item.title}</p>
                             <p className="text-sm text-muted-foreground">{item.issuer}</p>
                           </div>

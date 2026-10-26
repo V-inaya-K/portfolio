@@ -76,33 +76,33 @@ export const portfolioData: PortfolioData = {
   experience: [
     {
       company: "Neoflo.ai",
-      logo: "/company-nova.svg",
+      logo: "/logo-neoflo.png",
       position: "Engineering Intern",
       dates: "Sep 2026 - Present",
-      description: "Contribution towards tech growth at ADGIPS.",
-      highlights: []
+      description: "Developed end to end customer facing RAG Agents and Internal Tools.",
+      highlights: ["Built customer-facing RAG agents from prompt to production", "Created internal tools to support the team's day to day work"]
     },
     {
-      company: "Google Developer Group On Campus ADGIPS",
-      logo: "/company-nova.svg",
+      company: "Google Developer Club (GDGC) ADGIPS",
+      logo: "/logo-gdg.png",
       position: "AI/ML and Tech Member",
       dates: "2024 - Aug 2026",
       description: "Contribution towards tech growth at ADGIPS.",
-      highlights: []
+      highlights: ["Led hands-on AI/ML workshops and learning sessions", "Mentored juniors on building their first projects"]
     },
     {
       company: "Social Winter of Code",
-      logo: "/company-atlas.svg",
+      logo: "/logo-swoc.png",
       position: "Contributor",
       dates: "Oct 2024 - Jan 2025",
       description: "Developing effective open source solutions for social benefit.",
-      highlights: []
+      highlights: ["Shipped open-source tools with real social impact", "Reviewed and merged community-contributed pull requests"]
     }
   ],
   volunteerExperience: [
     {
-      company: "Google Developer Group On Campus ADGIPS",
-      logo: "/company-nova.svg",
+      company: "Google Developer Club (GDGC) ADGIPS",
+      logo: "/logo-gdg.png",
       position: "AI/ML and Tech Member",
       dates: "2024 - Present",
       description: "Contribution towards tech growth at ADGIPS.",
@@ -110,7 +110,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       company: "Social Winter of Code",
-      logo: "/company-atlas.svg",
+      logo: "/logo-swoc.png",
       position: "Contributor",
       dates: "2024 - Present",
       description: "Developing effective open source solutions for social benefit.",
