@@ -7,6 +7,7 @@ import { ProjectsSection } from "@/components/projects-section";
 import { SkillsSection } from "@/components/skills-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { ScrollProgress } from "@/components/scroll-progress";
 import { portfolioData } from "@/lib/portfolioData";
 
 export function generateMetadata() {
@@ -21,6 +22,7 @@ export default function Page() {
     <main className="relative min-h-screen overflow-hidden">
       <CursorSpotlight />
       <Navbar />
+      <ScrollProgress />
       <Hero />
       <AboutSection />
       <ExperienceSection />

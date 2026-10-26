@@ -1,12 +1,20 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Code2, Github, Instagram, Linkedin, Mail, Menu, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { portfolioData } from "@/lib/portfolioData";
+
+const navIcons: Record<string, typeof Github> = {
+  GitHub: Github,
+  LinkedIn: Linkedin,
+  LeetCode: Code2,
+  Instagram: Instagram,
+  Gmail: Mail
+};
 
 const sectionMap = [
   { id: "home", label: "Home" },
@@ -64,9 +72,9 @@ export function Navbar() {
       initial={{ y: 0, opacity: 1 }}
       animate={{ y: hidden ? -120 : 0, opacity: 1 }}
       transition={{ duration: 0.35, ease: "easeOut" }}
-      className={cn("fixed left-0 right-0 top-0 z-50 px-3 py-3 sm:px-6")}
+      className={cn("fixed left-0 right-0 top-0 z-50 px-3 pt-3 sm:px-6")}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-full border border-border/60 bg-background/75 px-4 py-3 shadow-glow backdrop-blur-xl">
+       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-3xl border border-white/30 bg-background/60 px-5 py-3 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.55)] backdrop-blur-2xl">
         <a href="#home" className="font-display text-sm font-semibold tracking-[0.2em] uppercase">
           VS
         </a>
@@ -79,6 +87,7 @@ export function Navbar() {
               ? "bg-foreground text-background"
               : "text-foreground/70 hover:bg-accent hover:text-foreground";
             const opensNewTab = item.href.startsWith("http");
+            const NavIcon = navIcons[item.label];
 
             return item.external ? (
               <a
@@ -87,9 +96,11 @@ export function Navbar() {
                 download={item.download}
                 target={item.download || !opensNewTab ? undefined : "_blank"}
                 rel={item.download || !opensNewTab ? undefined : "noreferrer"}
-                className="rounded-full px-4 py-2 text-sm font-medium text-foreground/70 transition hover:bg-accent hover:text-foreground"
+                title={item.label}
+                aria-label={item.label}
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full text-foreground/70 transition hover:bg-accent hover:text-foreground"
               >
-                {item.label}
+                {NavIcon ? <NavIcon className="h-[18px] w-[18px]" strokeWidth={1.8} /> : item.label}
               </a>
             ) : (
               <a
@@ -131,7 +142,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.98 }}
             transition={{ duration: 0.2 }}
-            className="mx-auto mt-3 max-w-7xl rounded-3xl border border-border/60 bg-background/95 p-4 shadow-2xl backdrop-blur-xl md:hidden"
+            className="mx-auto mt-3 max-w-7xl rounded-3xl border border-white/30 bg-background/90 p-4 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.55)] backdrop-blur-2xl md:hidden"
           >
             <div className="grid gap-2">
               <div className="flex items-center justify-between rounded-2xl border border-border/60 px-4 py-3">
@@ -140,17 +151,20 @@ export function Navbar() {
                 </span>
                 <ThemeToggle />
               </div>
-              {navItems.map((item) =>
-                item.external ? (
+              {navItems.map((item) => {
+                const NavIcon = navIcons[item.label];
+
+                return item.external ? (
                   <a
                     key={item.label}
                     href={item.href}
                     download={item.download}
                     target={item.download || !item.href.startsWith("http") ? undefined : "_blank"}
                     rel={item.download || !item.href.startsWith("http") ? undefined : "noreferrer"}
-                    className="rounded-2xl border border-border/60 px-4 py-3 text-sm font-medium text-foreground/80 transition hover:bg-accent"
+                    className="flex items-center gap-3 rounded-2xl border border-border/60 px-4 py-3 text-sm font-medium text-foreground/80 transition hover:bg-accent"
                     onClick={() => setIsOpen(false)}
                   >
+                    {NavIcon ? <NavIcon className="h-4 w-4" strokeWidth={1.8} /> : null}
                     {item.label}
                   </a>
                 ) : (
@@ -167,8 +181,8 @@ export function Navbar() {
                   >
                     {item.label}
                   </a>
-                )
-              )}
+                );
+              })}
             </div>
           </motion.div>
         ) : null}

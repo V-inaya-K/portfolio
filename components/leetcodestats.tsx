@@ -96,7 +96,7 @@ export function LeetCodeStats({ username, fallback }: Props) {
             <h3 className="mt-1 font-display text-xl font-semibold">Problem Solving</h3>
           </div>
           <div className="flex items-center gap-3">
-            <span className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground">
+            <span className="rounded-full border border-white/25 px-3 py-1 text-xs text-muted-foreground">
               {source === "live" ? "Live" : source === "cache" ? "Cached" : "Fallback"}
             </span>
             <a
@@ -113,7 +113,7 @@ export function LeetCodeStats({ username, fallback }: Props) {
           {cards.map(([label, value]) => (
             <div
               key={label}
-              className="rounded-2xl border border-border/60 bg-background/70 p-4"
+              className="rounded-2xl border border-white/25 bg-background/70 p-4"
             >
               <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">{label}</p>
               <p className="mt-2 font-display text-2xl font-semibold">{value}</p>

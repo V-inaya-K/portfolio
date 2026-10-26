@@ -36,7 +36,7 @@ export function ContactSection() {
         <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="border-border/60">
             <CardContent className="space-y-4 p-5 sm:p-6">
-              <div className="rounded-3xl border border-border/60 bg-background/70 p-4">
+              <div className="rounded-3xl border border-white/25 bg-background/70 p-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                   Direct Mail
                 </p>
@@ -58,7 +58,7 @@ export function ContactSection() {
                   ))}
                 </div>
               </div>
-              <div className="rounded-3xl border border-border/60 bg-gradient-to-br from-foreground/5 to-transparent p-4">
+              <div className="rounded-3xl border border-white/25 bg-gradient-to-br from-foreground/5 to-transparent p-4">
                 <p className="text-sm leading-6 text-muted-foreground">
                   If you have a product challenge, a freelance brief, or a team opening, I'm happy to
                   talk through scope, timeline, and the best way to ship it well.
@@ -98,7 +98,7 @@ export function ContactSection() {
                   </Button>
                   <a
                     href={`mailto:${portfolioData.personal.email}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-border/60 px-4 py-2 text-sm transition hover:bg-accent"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-sm transition hover:bg-accent"
                   >
                     Alternate Email
                     <ArrowRight className="h-4 w-4" />

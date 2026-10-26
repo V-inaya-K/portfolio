@@ -48,13 +48,13 @@ body {
     radial-gradient(circle at top right, rgba(16, 185, 129, 0.08), transparent 24%),
     hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family:
-    Inter,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: var(--font-sans);
+}
+
+a,
+button,
+[role="button"] {
+  outline-offset: 3px;
 }
 
 * {

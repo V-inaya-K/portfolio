@@ -10,7 +10,7 @@ export function LeadershipSection() {
         <SectionHeading eyebrow="Leadership Experience" />
         <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
           <ScrollReveal>
-            <Card className="h-full border-border/60">
+            <Card className="h-full border-white/25">
               <CardContent className="space-y-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                   Team Leadership
@@ -22,7 +22,7 @@ export function LeadershipSection() {
             </Card>
           </ScrollReveal>
           <ScrollReveal delay={0.05}>
-            <Card className="h-full border-border/60">
+            <Card className="h-full border-white/25">
               <CardContent className="space-y-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                   Hackathon Highlights

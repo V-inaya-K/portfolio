@@ -24,7 +24,7 @@ export function AboutSection() {
                   {portfolioData.personal.summary}
                 </p>
                 <div className="grid gap-3 sm:grid-cols-3">
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
                       Focus
                     </p>
@@ -32,7 +32,7 @@ export function AboutSection() {
                       End-to-end scalable apps and agentic AI systems.
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
                       Location
                     </p>
@@ -40,7 +40,7 @@ export function AboutSection() {
                       New Delhi, India
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
                       Availability
                     </p>
@@ -59,7 +59,7 @@ export function AboutSection() {
                 </Button>
                 {expanded ? (
                   <div className="grid gap-3 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                    <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                       <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                         Career Goals
                       </p>
@@ -72,7 +72,7 @@ export function AboutSection() {
                         ))}
                       </ul>
                     </div>
-                    <div className="rounded-2xl border border-border/60 bg-background/70 p-4">
+                    <div className="rounded-2xl border border-white/25 bg-background/70 p-4">
                       <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
                         Interests
                       </p>
@@ -80,7 +80,7 @@ export function AboutSection() {
                         {portfolioData.about.interests.map((interest) => (
                           <span
                             key={interest}
-                            className="rounded-full border border-border/60 px-3 py-1 text-xs text-foreground/80"
+                            className="rounded-full border border-white/25 px-3 py-1 text-xs text-foreground/80"
                           >
                             {interest}
                           </span>
@@ -97,15 +97,15 @@ export function AboutSection() {
               <CardContent className="space-y-3.5 p-5 sm:p-6">
                 <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">Snapshot</p>
                 <div className="space-y-2.5 text-sm text-foreground/85">
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-3.5">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-3.5">
                     <p className="text-muted-foreground">Location</p>
                     <p className="mt-1 font-medium">{portfolioData.personal.location}</p>
                   </div>
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-3.5">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-3.5">
                     <p className="text-muted-foreground">Availability</p>
                     <p className="mt-1 font-medium">{portfolioData.personal.availability}</p>
                   </div>
-                  <div className="rounded-2xl border border-border/60 bg-background/70 p-3.5">
+                  <div className="rounded-2xl border border-white/25 bg-background/70 p-3.5">
                     <p className="text-muted-foreground">Current Direction</p>
                     <p className="mt-1 font-medium">End-to-end scalable apps, agentic AI systems, and UI systems</p>
                   </div>
